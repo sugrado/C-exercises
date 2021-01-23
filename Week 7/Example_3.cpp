@@ -51,14 +51,14 @@ void show(struct results a){
 }
 
 int main(){
-	int dizi[100];
+	int arr[100];
 
 	for(int i=0; i<100; i++){
 		printf("Enter the %d element of the array: ", i+1);
-		scanf("%d", &dizi[i]);
+		scanf("%d", &arr[i]);
 	}
 	
-	struct results c = operations(dizi);
+	struct results c = operations(arr);
 	show(c);
 	
 	getch();
